@@ -1,0 +1,15 @@
+spring:
+  application:
+    name: springreactive
+  datasource:
+    driver-class-name: org.postgresql.Driver
+  r2dbc:
+    url: r2dbc:postgresql://localhost:5432/spring_reactive
+    username: postgres
+    password: Mg505!9405
+  flyway:
+    url: jdbc:postgresql://localhost:5432/spring_reactive
+    user: postgres
+    password: Mg505!9405
+    locations: classpath:db/migration
+    enabled: true
